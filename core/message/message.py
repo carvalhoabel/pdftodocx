@@ -50,3 +50,9 @@ class Message:
     @info.setter
     def info(self, info: bool):
         self._info = info
+
+    def cleardata(self):
+        """This method clean and reset data.
+        """
+        self.message = self.title = ''
+        self.warning = self.error = self.info = False
